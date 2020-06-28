@@ -73,11 +73,11 @@ textarea{
   border-bottom: 1px black dashed;
 }
 .pastHour textarea {
-  background-color: rgba(136, 132, 132, 0.63);
+  background-color: rgba(136, 132, 132, 0.6);
 }
 .currentHour textarea {
-  background-color: rgba(204, 201, 15, 0.87);
+  background-color: rgba(231, 228, 53, 0.6);
 }
 .futureHour textarea {
-  background-color: rgba(13, 117, 36, 0.555)
+  background-color: rgba(13, 117, 36, 0.6)
 }

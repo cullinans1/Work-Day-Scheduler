@@ -23,11 +23,11 @@ var updatedHour = moment().hours();
         if(rowNum < updatedHour) {
             $(this).addClass("pastHour");
         }
-        else if (rowTime === updatedHour) {
+        else if (rowNum === updatedHour) {
             $(this).removeClass("pastHour")
             .addClass("currentHour");
         }
-        else if (rowTime > updatedHour) {
+        else if (rowNum > updatedHour) {
             $(this).removeClass("pastHour")
             .removeClass("currentHour")
             .addClass("futureHour");
@@ -37,7 +37,7 @@ var updatedHour = moment().hours();
 compareTimes();
 
 //set interval to check times every 30 min
-setInterval(compareTimes, (1000*60)*30);
+var timeCheck = setInterval(compareTimes, (1000 * 60) * 30);
 
 //loading local storage items
 $("#9 .event-entry").val(localStorage.getItem("9"));
