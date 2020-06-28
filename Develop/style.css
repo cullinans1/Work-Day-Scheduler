@@ -72,3 +72,12 @@ textarea{
 #hour {
   border-bottom: 1px black dashed;
 }
+.pastHour textarea {
+  background-color: rgba(136, 132, 132, 0.63);
+}
+.currentHour textarea {
+  background-color: rgba(204, 201, 15, 0.87);
+}
+.futureHour textarea {
+  background-color: rgba(13, 117, 36, 0.555)
+}
